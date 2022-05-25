@@ -1,11 +1,8 @@
-
 ## CRUD REST SERVICE WITH VALIDATION and POSTGRESQL AND LAYERED ARCHITECTURE
 
 
 
 ## Installation
-
-Install Express JS, Hapijio with npm
 
 ```bash
   npm i express @hapi/joi cors generate-password pg pg-hstore sequelize uuid
@@ -37,20 +34,20 @@ Run the following command
 
 #### Get user by id
 
-```http
+```bash
   GET http://localhost:3000/items/id/dbcae21d-9bd1-4647-93c3-f53f4fd7b7e4
 ```
 
 #### Get all users data
 
-```http
+```bash
   GET http://localhost:3000/items/
 ```
 
 #### Get auto-suggest list from limit users, sorted by login property and filtered by loginSubstring in the login property:
  
 
-```http
+```bash
   GET http://localhost:3000/items/getASU?login=Dar&limit=3
 
 #### Key ---- Value
@@ -60,7 +57,7 @@ Run the following command
 
 #### Create User data 
 
-```http
+```bash
   Post http://localhost:3000/items/
 
 Send user data in Body tab and Select type JSON .
@@ -72,7 +69,7 @@ Send user data in Body tab and Select type JSON .
 ```
 #### Update User data
 
-```http
+```bash
   Put http://localhost:3000/items/dbcae21d-9bd1-4647-93c3-f53f4fd7b7e4
 
   Here "dbcae21d-9bd1-4647-93c3-f53f4fd7b7e4" is the id of user whose data we want to updated.
@@ -87,7 +84,7 @@ Send user data in Body tab and Select type JSON .
 
 #### Delete operation will Mark idDeleted "True" in user data
 
-```http
+```bash
   Delete http://localhost:3000/items/delete/dbcae21d-9bd1-4647-93c3-f53f4fd7b7e4
   
   Here "dbcae21d-9bd1-4647-93c3-f53f4fd7b7e4" is the id of user whose id we want to softdelete.
